@@ -18,13 +18,13 @@ Traveller.prototype.getJourneyEndLocations = function () {
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
   return this.journeys.filter((journey) => {
-    return journey.transport === transport
+    return journey.transport === transport;
   })
 };
 
 Traveller.prototype.getJourneysByMinDistance = function (minDistance) {
   return this.journeys.filter((journey) => {
-    return journey.distance >= minDistance
+    return journey.distance >= minDistance;
   })
   };
 
@@ -38,10 +38,10 @@ Traveller.prototype.getUniqueModesOfTransport = function () {
   let uniqueTransportArray = [];
   this.journeys.forEach((journey) => {
     if (!uniqueTransportArray.includes(journey.transport)) {
-      uniqueTransportArray.push(journey.transport)
+      uniqueTransportArray.push(journey.transport);
     }
   })
-  return uniqueTransportArray
+  return uniqueTransportArray;
 };
 
 
